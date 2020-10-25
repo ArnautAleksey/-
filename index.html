@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="title">Проекты</h1>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="main__inner">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <button class="nav__btn btn" data-filter="all">Все</button>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__btn btn" data-filter="html">Верстка</button>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__btn btn" data-filter="js">JavaScript</button>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="cards">
+                    <a class="card html" href="project/web/01/index.html" >
+                        <div class="card__header card__header-html">
+                            <div class="card__number">#1</div>
+                            <div class="card__category">html</div>
+                        </div>
+                        <div class="card__title">Odigo</div>
+                        <button class="card__btn btn">Посмотреть</button>
+                    </a>
+                    <a class="card js" href="project/javascript/01/index.html" >
+                        <div class="card__header card__header-js">
+                            <div class="card__number">#1</div>
+                            <div class="card__category">JS</div>
+                        </div>
+                        <div class="card__title">Бургер меню</div>
+                        <button class="card__btn btn">Посмотреть</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
