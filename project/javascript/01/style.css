@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -49,11 +49,13 @@ body {
   align-items: center;
   transition: 0.5s;
   z-index: 2;
+  font-size: 0;
 }
 
 .burger-menu_active {
   right: 0;
   width: 200px;
+  font-size: 24px;
 }
 
 .button {
