@@ -53,13 +53,11 @@ body {
     align-items: center;
     transition: 0.5s;
     z-index: 2;
-    font-size: 0;
 }
 
 .burger-menu_active {
     right: 0;
     width: 200px;
-    font-size: 24px;
 }
 
 .button {
@@ -80,6 +78,7 @@ body {
         height: 3px;
         background-color: #ffffff;
         border-radius: 10px;
+        transition: 0.5s;
 
         &::before, &::after {
             position: absolute;
@@ -89,6 +88,7 @@ body {
             background-color: #ffffff;
             left: 0;
             border-radius: 10px;
+            transition: 0.5s;
         }
         &::before {
             top: 10px;
@@ -107,11 +107,11 @@ body {
 
         &::before {
             top: 0;
-            transform: rotate(45deg);
+            transform: rotate(-45deg);
         }
         &::after {
             top: 0;
-            transform: rotate(-45deg);
+            transform: rotate(45deg);
         }
     }
 }

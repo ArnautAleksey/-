@@ -6,6 +6,15 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     
@@ -13,29 +22,29 @@
     <div class="wrapper">
         <div class="header__wrapper">
             <div class="logo">
-                <a class="logo__link" href="index.html">
+                <a class="logo__link header__link" href="#home">
                     <img src="images/svg/logo.svg" alt="">
                 </a>
             </div>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a class="nav__link" href="">
+                        <a class="nav__link header__link" href="#articles">
                             Articles
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="">
+                        <a class="nav__link header__link" href="#location">
                             Locations
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="">
+                        <a class="nav__link header__link" href="#video">
                             Videos
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="">
+                        <a class="nav__link header__link" href="#!">
                             Sign in
                         </a>
                     </li>
@@ -45,22 +54,22 @@
                 <button class="menu__button">
                     <span></span>
                 </button>
-                <a class="menu__logo" href="index.html">
+                <a class="menu__logo header__link" href="#home">
                     <img src="images/svg/logo.svg" alt="">
                 </a>
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a class="menu__link" href="#!">Articles</a>
+                            <a class="menu__link header__link" href="#articles">Articles</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#!">Locations</a>
+                            <a class="menu__link header__link" href="#location">Locations</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#!">Videos</a>
+                            <a class="menu__link header__link" href="#video">Videos</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#!">Sign in</a>
+                            <a class="menu__link header__link" href="#!">Sign in</a>
                         </li>
                     </ul>
                 </nav>
@@ -69,7 +78,7 @@
     </div>
 </header>
 
-<main class="main">
+<main class="main" id="home">
 
     <section class="intro">
         <div class="wrapper">
@@ -129,7 +138,7 @@
         </div>
     </section>
 
-    <section class="places">
+    <section class="places" id="location">
         <div class="wrapper-lg">
             <div class="places__header">
                 <h2 class="places__header-title title">Get inspired for your next trip</h2>
@@ -196,7 +205,7 @@
         </div>
     </section>
 
-    <section class="top">
+    <section class="top" id="articles">
         <div class="wrapper-lg">
             <h2 class="top__title title">Today top places to visit</h2>
             <div class="top__cards">
@@ -336,7 +345,7 @@
         </div>
     </section>
 
-    <section class="video">
+    <section class="video" id="video">
         <div class="viedo__wrapper">
             <div class="viedo__item">
                 <iframe class="video__element" width="560" height="315" src="https://www.youtube.com/embed/R3Ym_DVerPw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

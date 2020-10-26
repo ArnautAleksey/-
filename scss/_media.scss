@@ -15,3 +15,9 @@
         font-size: 50px;
     }
 }
+
+@media (max-width: 375px) {
+    .nav__btn  {
+        padding: 5px 15px;
+    }
+}

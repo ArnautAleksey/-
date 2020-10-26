@@ -40,15 +40,14 @@ button {
 
 .home {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     color: #fff;
-    margin: 10px;
     padding: 10px 15px;
     border: 2px solid #fff;
     border-radius: 10px;
 
     &:active {
-        bottom: 9px;
+        bottom: 19px;
     }
 }
 
@@ -131,6 +130,7 @@ body {
 
 .hidden {
     width: 0;
+    height: 0;
     transform: scale(0.5);
 }
 
@@ -167,42 +167,5 @@ body {
 .card__btn {
     margin-bottom: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @import './media';
