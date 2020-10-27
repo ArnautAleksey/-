@@ -14,6 +14,18 @@ body {
   margin: 20px;
 }
 
+.nav__list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__item {
+  margin-right: 20px;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+
 .nav__link {
   color: #000000;
   text-transform: uppercase;

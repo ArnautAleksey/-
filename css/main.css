@@ -314,23 +314,6 @@ body {
   margin-top: 50px;
 }
 
-.nav__list {
-  display: flex;
-  justify-content: center;
-}
-
-.nav__item {
-  margin-right: 20px;
-}
-.nav__item:last-child {
-  margin-right: 0;
-}
-
-.nav__btn {
-  color: #fff;
-  border-color: #fff;
-}
-
 .cards {
   margin-top: 30px;
   display: flex;
@@ -356,12 +339,6 @@ body {
 }
 .card:hover {
   box-shadow: 0 20px 10px #000;
-}
-
-.hidden {
-  width: 0;
-  height: 0;
-  transform: scale(0.5);
 }
 
 .card__header {
