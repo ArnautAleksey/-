@@ -1,24 +1,37 @@
 @import 'vars.scss';
 @import 'reset.scss';
 
+::-webkit-scrollbar {
+    background-color: #f5f5f5;
+    width: 10px;
+    margin-right: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #95e1d3;
+    border-radius: 10px;
+}
+
 .container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
 
-.suptitle {
+.section__header-suptitle {
     font-family: $kaushan-family;
     font-size: 24px;
+    text-align: center;
 }
 
-.title {
+.section__header-title {
     color: #333333;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 40px;
     position: relative;
+    text-align: center;
+    margin: 25px 0 50px;
     
     &::before {
         position: absolute;
@@ -32,7 +45,7 @@
     }
 }
 
-.subtitle {
+.section__header-subtitle {
     font-family: $roboto-family;
     color: #999999;
     font-size: 15px;
@@ -49,7 +62,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    padding: 30px 0;
+    padding: 30px 10px;
 }
 
 .header__wrap {
@@ -130,6 +143,7 @@
     background-size: cover;
     display: flex;
     align-items: center;
+    padding: 90px 0 30px;
 }
 
 .intro__wrap {
@@ -189,7 +203,6 @@
 
 .about {
     margin-top: 90px;
-    padding: 0 10px;
 }
 
 .about__wrap {
@@ -198,17 +211,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.about__title {
-    margin: 25px 0 50px;
+    padding: 0 10px;
 }
 
 .about__photo {
     margin-top: 90px;
     display: flex;
-
-    
 }   
 
 .about__photo-img {
@@ -339,8 +347,393 @@
     margin-top: 30px;
 }
 
-
 // About end
+
+// Services start
+
+.services {
+    margin-top: 110px;
+}
+
+.services__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services__card {
+    display: flex;
+    margin: 0 5px 100px;
+}
+
+.services__card-img {
+    margin-right: 28px;
+}
+
+.services__card-title {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.services__card-subtitle {
+    max-width: 270px;
+    color: #999999;
+    font-family: $roboto-family;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+// Services end
+
+// Devices start
+
+.devices {
+    min-height: 100vh;
+    background: url(../images/devices-bg.webp) no-repeat center center;
+    background-size: cover;
+    padding-top: 110px;
+    position: relative;
+}
+
+.section__header-devices {
+    padding-bottom: 580px;
+}
+
+.devices__img {
+    position: absolute;
+    bottom: 0;
+}
+
+.devices__img-ipad {
+    max-width: 488px;
+    width: 100%;
+    left: 50%;
+    margin-left: -244px;
+}
+
+.devices__img-iphon {
+    max-width: 250px;
+    width: 100%;
+    height: 350px;
+    bottom: 0;
+    left: 57%;
+}
+
+// Devices end
+
+// We-do start
+
+.wedo {
+    margin-top: 110px;
+}
+
+.wedo__wrap {
+    display: flex;
+    margin-top: 90px;
+    padding: 0 10px;
+}
+
+.wedo__img {
+    margin-right: 30px;
+}
+
+.wedo__accordion-item {
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.wedo__accordion-item_active {
+
+    .wedo__accordion-header {
+
+        .wedo__accordion-arrow {
+            transform: rotate(180deg);
+        }
+    }
+    .wedo__accordion-content {
+        height: 180px;
+        font-size: 15px;
+        padding: 15px;
+        opacity: 1;
+    }
+}
+
+.wedo__accordion-header {
+    max-width: 600px;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.wedo__accordion-title {
+    margin-left: 15px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.wedo__accordion-arrow {
+    position: absolute;
+    right: 20px;
+}
+
+.wedo__accordion-content {
+    font-family: $roboto-family;
+    font-style: italic;
+    font-weight: 300;
+    color: #999999;
+    line-height: 24px;
+    height: 0;
+    border: 1px solid #e5e5e5;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.wedo__accordion-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.webo__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    margin-top: 120px;
+}
+
+.webo__slider-track {
+    width: 980px;
+    display: flex;
+    overflow: hidden;
+    padding: 70px 0;
+}
+
+.webo__slider-item {
+    min-width: 980px;
+    display: flex;
+    transition: 0.5s;
+}
+
+.webo__slider-img {
+    padding: 45px;
+    border: 3px solid #95e1d3;
+    margin-right: 30px;
+}
+
+.webo__slider-text {
+    max-width: 770px;
+    color: #999999;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.webo__slider-name {
+    padding-left: 70px;
+    color: #333333;
+    font-size: 24px;
+    font-family: $kaushan-family;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 3px;
+        background-color: #f38181;
+        left: 0;
+        top: 50%;
+        margin-top: -1.5px;
+    }
+}
+
+.button__prev {
+    transform: rotate(90deg);
+    margin-right: 75px;
+}
+
+.button__next {
+    transform: rotate(-90deg);
+    margin-left: 75px;
+}
+
+// We-do end
+
+// Team start
+
+.team {
+    margin-top: 100px;
+}
+
+.team__wrap {
+    padding: 0 10px;
+}
+
+.team__cards {
+    margin-top: 80px;
+    display: flex;
+}
+
+.team__card {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.team__card-img {
+    position: relative;
+    transition: 0.5s;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    &:hover {
+        transform: translate(-10px, -10px);
+
+        &::before {
+            opacity: 1;
+        } 
+        .team__card-bg {
+            transform: translate(10px, 10px);
+        }
+        .team__card-social {
+            opacity: 1;
+        }
+    }
+}
+
+.team__card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__card-social {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.team__card-social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #fce38a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.5s;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: #f38181;
+    }
+    &:last-child {
+
+        &::before {
+            background-color: transparent;
+        }
+    }
+
+    svg {
+
+        path {
+            fill: #f38181;
+            transition: 0.5s;
+        }
+    }
+    &:hover {
+        background-color: #f38181;
+
+        svg {
+
+            path {
+                fill: #fff;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+.team__card-bg {
+    max-width: 380px;
+    width: 100%;
+    max-height: 470px;
+    height: 100%;
+    background-color: #95e1d3;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.team__card-name {
+    margin: 15px 0 10px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.team__card-profession {
+    color: #999999;
+    font-size: 15px;
+    font-family: $roboto-family;
+    font-style: italic;
+    text-align: center;
+}
+
+.team__logos {
+    display: flex;
+    margin-top: 120px;
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__logo {
+    margin-right: 90px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+// Team end
 
 @import 'media.scss';
 
