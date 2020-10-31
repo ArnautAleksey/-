@@ -13,24 +13,24 @@
         <div class="container">
             <div class="header__wrap">
                 <div class="header__logo">
-                    <a class="header__logo-link" href="#!">MoGo</a>
+                    <a class="header__logo-link" href="#home">MoGo</a>
                 </div>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-item">
-                            <a class="header__nav-link header__nav-link_active" href="#!">About</a>
+                            <a class="header__nav-link header__nav-link_active" href="#about">About</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="#!">Service</a>
+                            <a class="header__nav-link" href="#services">Service</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="#!">Work</a>
+                            <a class="header__nav-link" href="#works">Work</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="#!">Blog</a>
+                            <a class="header__nav-link" href="#blog">Blog</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="#!">Contact</a>
+                            <a class="header__nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="header__nav-item">
                             <a class="header__nav-icon" href="#!">
@@ -51,7 +51,7 @@
         </div>
     </header>
     
-    <main class="main">
+    <main class="main" id="home">
         
         <setion class="intro">
             <div class="container">
@@ -63,7 +63,7 @@
             </div>
         </setion>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about__wrap">
                     <div class="section__header">
@@ -127,7 +127,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <div class="services__wrap">
                     <div class="section__header">
@@ -285,50 +285,47 @@
                 </div>
             </div>
             <div class="slider wedo__slider">
-                <div class="slider__buttons">
-                    <button class="button__prev">
-                        <img src="images/svg/arrow.svg" alt="">
-                    </button>
-                </div>
-                <div class="slider__track wedo__slider-track">
-                    <div class="slider__item">
-                        <div class="slider__img wedo__slider-img">
-                            <img src="images/svg/10.svg" alt="">
-                        </div>
-                        <div class="slider__content">
-                            <div class="slider__text">
-                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                <div class="slider__container">
+                    <div class="slider__track">
+                        <div class="slider__item">
+                            <div class="slider__item-img wedo__slider-img">
+                                <img src="images/svg/10.svg" alt="">
                             </div>
-                            <div class="slider__name">Jon Doe</div>
+                            <div class="slider__item-content">
+                                <div class="slider__item-text">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                </div>
+                                <div class="slider__item-name">Jon Doe</div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-img">
+                                <img src="images/svg/10.svg" alt="">
+                            </div>
+                            <div class="slider__item-content">
+                                <div class="slider__item-text">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                </div>
+                                <div class="slider__item-name">Jon Doe</div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-img">
+                                <img src="images/svg/10.svg" alt="">
+                            </div>
+                            <div class="slider__item-content">
+                                <div class="slider__item-text">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                </div>
+                                <div class="slider__item-name">Jon Doe</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="slider__item">
-                        <div class="slider__img wedo__slider-img">
-                            <img src="images/svg/10.svg" alt="">
-                        </div>
-                        <div class="slider__content">
-                            <div class="slider__text">
-                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                            </div>
-                            <div class="slider__name">Jon Doe</div>
-                        </div>
-                    </div>
-                    <div class="slider__item">
-                        <div class="slider__img wedo__slider-img">
-                            <img src="images/svg/10.svg" alt="">
-                        </div>
-                        <div class="slider__content">
-                            <div class="slider__text">
-                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                            </div>
-                            <div class="slider__name">Jon Doe</div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="slider__buttons">
-                    <button class="button__next">
-                        <img src="images/svg/arrow.svg" alt="">
-                    </button>
+                    <button class="button-prev"></button>
+                    <button class="button-next"></button>
                 </div>
             </div>
         </section>
@@ -441,7 +438,7 @@
             </div>
         </section>
 
-        <section class="works">
+        <section class="works" id="works">
             <div class="section__header">
                 <h3 class="section__header-suptitle">What we do</h3>
                 <h2 class="section__header-title">some of our work</h2>
@@ -530,50 +527,47 @@
                 </div>
             </div>
             <div class="slider works__slider">
-                <div class="slider__buttons">
-                    <button class="button__prev">
-                        <img src="images/svg/arrow.svg" alt="">
-                    </button>
-                </div>
-                <div class="slider__track">
-                    <div class="slider__item">
-                        <div class="slider__img works__slider-img">
-                            <img src="images/work/08.webp" alt="">
-                        </div>
-                        <div class="slider__content">
-                            <div class="slider__text">
-                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                <div class="slider__container">
+                    <div class="slider__track">
+                        <div class="slider__item">
+                            <div class="slider__item-img works__slider-img">
+                                <img src="images/work/08.webp" alt="">
                             </div>
-                            <div class="slider__name">Jon Doe</div>
+                            <div class="slider__item-content">
+                                <div class="slider__item-text">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                </div>
+                                <div class="slider__item-name">Joshua Earle</div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-img works__slider-img">
+                                <img src="images/work/08.webp" alt="">
+                            </div>
+                            <div class="slider__item-content">
+                                <div class="slider__item-text">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                </div>
+                                <div class="slider__item-name">Joshua Earle</div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-img works__slider-img">
+                                <img src="images/work/08.webp" alt="">
+                            </div>
+                            <div class="slider__item-content">
+                                <div class="slider__item-text">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                </div>
+                                <div class="slider__item-name">Joshua Earle</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="slider__item works__slider-img">
-                        <div class="slider__img">
-                            <img src="images/work/08.webp" alt="">
-                        </div>
-                        <div class="slider__content">
-                            <div class="slider__text">
-                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                            </div>
-                            <div class="slider__name">Jon Doe</div>
-                        </div>
-                    </div>
-                    <div class="slider__item">
-                        <div class="slider__img works__slider-img">
-                            <img src="images/work/08.webp" alt="">
-                        </div>
-                        <div class="slider__content">
-                            <div class="slider__text">
-                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                            </div>
-                            <div class="slider__name">Jon Doe</div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="slider__buttons">
-                    <button class="button__next">
-                        <img src="images/svg/arrow.svg" alt="">
-                    </button>
+                    <button class="button-prev"></button>
+                    <button class="button-next"></button>
                 </div>
             </div>
         </section>
@@ -637,7 +631,7 @@
             </div>
         </section>
 
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="container">
                 <div class="section__header">
                     <h3 class="section__header-suptitle">Our stories</h3>
@@ -726,7 +720,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="footer__cards">
                 <div class="footer__card">
@@ -848,7 +842,7 @@
                             <img src="images/footer/12.webp" alt="">
                         </a>
                     </div>
-                    <a class="footer__card-link" href="#!">View more photos</a>
+                    <a class="footer__inst-link" href="#!">View more photos</a>
                 </div>
             </div>
         </div>
