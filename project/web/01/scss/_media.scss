@@ -32,7 +32,8 @@
     }
 
     .search__submit {
-        margin: 20px 0;
+       margin-top: 20px;
+       margin-left: 0;
     }
 
     .places__card-title {
@@ -78,6 +79,7 @@
         margin: 20px 0 0;
 
         &:first-child {
+            margin-right: 0;
             margin-top: 0;
         }
     }

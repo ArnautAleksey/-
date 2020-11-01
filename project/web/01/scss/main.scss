@@ -300,11 +300,13 @@ img {
     outline: none;
     border-bottom: 2px solid #BFC0C5;  
     padding-left: 45px;
-    margin-right: 60px;
     background: transparent url(../images/svg/circle.svg) no-repeat left center;
     background-size: 20px;
     display: flex;
 
+    &:first-child {
+        margin-right: 60px;
+    }
     &::placeholder {
         color: #ffffff;
     }
@@ -315,6 +317,7 @@ img {
     font-size: 24px;
     line-height: 30px;
     padding: 14px 38px;
+    margin-left: 60px;
     
 }
 
@@ -323,7 +326,6 @@ img {
 // BENEFITS START
 
 .benefits {
-    margin-bottom: 130px;
     padding: 0 20px;
 }
 
@@ -379,8 +381,7 @@ img {
 // PLACES START
 
 .places {
-    padding: 0 20px;
-    margin-bottom: 130px;
+    padding: 130px 20px 0;
 }
 
 .places__header {
@@ -466,8 +467,7 @@ img {
 // TOURS START
 
 .tours {
-    padding: 0 20px;
-    margin-bottom: 130px;
+    padding: 130px 20px 0;
 }
 
 .tours__cards {
@@ -518,8 +518,7 @@ img {
 // TOP START
 
 .top {
-    padding: 0 20px;
-    margin-bottom: 70px;
+    padding: 130px 20px 0;
 }
 
 .top__title {
@@ -602,6 +601,7 @@ img {
 
 .video {
     width: 100%;
+    padding-top: 100px;
 }
 
 .viedo__wrapper {

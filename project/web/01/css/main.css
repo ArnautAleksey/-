@@ -518,10 +518,12 @@ img {
   outline: none;
   border-bottom: 2px solid #BFC0C5;
   padding-left: 45px;
-  margin-right: 60px;
   background: transparent url(../images/svg/circle.svg) no-repeat left center;
   background-size: 20px;
   display: flex;
+}
+.search__field:first-child {
+  margin-right: 60px;
 }
 .search__field::placeholder {
   color: #ffffff;
@@ -531,10 +533,10 @@ img {
   font-size: 24px;
   line-height: 30px;
   padding: 14px 38px;
+  margin-left: 60px;
 }
 
 .benefits {
-  margin-bottom: 130px;
   padding: 0 20px;
 }
 
@@ -586,8 +588,7 @@ img {
 }
 
 .places {
-  padding: 0 20px;
-  margin-bottom: 130px;
+  padding: 130px 20px 0;
 }
 
 .places__header {
@@ -659,8 +660,7 @@ img {
 }
 
 .tours {
-  padding: 0 20px;
-  margin-bottom: 130px;
+  padding: 130px 20px 0;
 }
 
 .tours__cards {
@@ -702,8 +702,7 @@ img {
 }
 
 .top {
-  padding: 0 20px;
-  margin-bottom: 70px;
+  padding: 130px 20px 0;
 }
 
 .top__title {
@@ -781,6 +780,7 @@ img {
 
 .video {
   width: 100%;
+  padding-top: 100px;
 }
 
 .viedo__wrapper {
@@ -895,7 +895,8 @@ img {
   }
 
   .search__submit {
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-left: 0;
   }
 
   .places__card-title {
@@ -938,6 +939,7 @@ img {
     margin: 20px 0 0;
   }
   .search__field:first-child {
+    margin-right: 0;
     margin-top: 0;
   }
 
