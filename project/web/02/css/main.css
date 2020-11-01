@@ -333,6 +333,7 @@ img {
 
 .slider__track {
   display: flex;
+  transition: 0.5s;
 }
 
 .slider__item {
@@ -585,8 +586,7 @@ img {
 
 .intro {
   min-height: 100vh;
-  background-color: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
-  background: url(../images/intro-bg.webp) no-repeat center center;
+  background: #fce38ae6 url(../images/intro-bg.webp) no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -858,6 +858,10 @@ img {
   margin-right: 30px;
 }
 
+.wedo__accordion {
+  height: 400px;
+}
+
 .wedo__accordion-item {
   max-width: 600px;
   width: 100%;
@@ -882,9 +886,10 @@ img {
   border: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
-  padding: 14px 16px;
   position: relative;
   cursor: pointer;
+  height: 60px;
+  padding: 0 16px;
 }
 .wedo__accordion-header:hover .wedo__accordion-arrow {
   transform: rotate(0);
@@ -924,7 +929,7 @@ img {
 }
 
 .team {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .team__cards {
@@ -1477,6 +1482,28 @@ img {
   color: #f38181;
 }
 
+@media (max-width: 1180px) {
+  .slider__container {
+    max-width: 800px;
+  }
+
+  .slider__item-img {
+    padding: 35px;
+  }
+
+  .slider__item {
+    min-width: 800px;
+  }
+
+  .slider__item-text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .slider__buttons {
+    width: 900px;
+  }
+}
 @media (max-width: 1059px) {
   .clients__cards {
     flex-direction: column;
@@ -1568,6 +1595,19 @@ img {
   }
   .facts__card::before {
     background-color: transparent;
+  }
+}
+@media (max-width: 930px) {
+  .slider__container {
+    max-width: 600px;
+  }
+
+  .slider__item {
+    min-width: 600px;
+  }
+
+  .slider__buttons {
+    width: 700px;
   }
 }
 @media (max-width: 840px) {
@@ -1699,6 +1739,42 @@ img {
     max-width: 100%;
     border-bottom: 2px solid #ffffff;
   }
+
+  .slider__item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .slider__item-img {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .slider__item-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+  .slider__item-name::before {
+    left: 50%;
+    margin-left: -100px;
+    width: 40px;
+  }
+
+  .slider__container {
+    max-width: 400px;
+  }
+
+  .slider__item {
+    min-width: 400px;
+  }
+
+  .slider__buttons {
+    width: 500px;
+  }
 }
 @media (max-width: 670px) {
   .devices__img-ipad {
@@ -1713,6 +1789,19 @@ img {
 
   .team__logo {
     margin-right: 10px;
+  }
+}
+@media (max-width: 670px) {
+  .slider__container {
+    max-width: 200px;
+  }
+
+  .slider__item {
+    min-width: 200px;
+  }
+
+  .slider__buttons {
+    width: 280px;
   }
 }
 @media (max-width: 425px) {
