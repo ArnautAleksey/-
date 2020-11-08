@@ -1,0 +1,168 @@
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #CEDDEC;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 40px;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  text-transform: uppercase;
+  position: relative;
+  color: #262833;
+}
+.nav__link::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 0%;
+  height: 4px;
+  background-color: #262833;
+  bottom: -2px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.nav__link:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #CEDDEC;
+  right: -100%;
+  bottom: 0;
+  transition: 0.8s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_active {
+  width: 100%;
+  right: 0;
+}
+.menu_active .button {
+  transform: rotate(180deg);
+  background-color: #262833;
+}
+.menu_active .button span {
+  background-color: #CEDDEC;
+}
+.menu_active .button span::before, .menu_active .button span::after {
+  background-color: #CEDDEC;
+}
+
+.button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #CEDDEC;
+  left: -50px;
+  top: 50%;
+  margin-top: -50px;
+  transition: 0.5s;
+}
+.button span {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #262833;
+  left: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.button span::before, .button span::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 4px;
+  left: 10px;
+  background-color: #262833;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.button span::before {
+  transform: rotate(0);
+  top: 0;
+  opacity: 0;
+}
+.button span::after {
+  transform: rotate(0);
+  bottom: 0;
+  opacity: 0;
+}
+.button:hover {
+  width: 120px;
+  height: 120px;
+  left: -60px;
+  margin-top: -60px;
+}
+.button:hover span::before, .button:hover span::after {
+  left: -3px;
+}
+.button:hover span::before {
+  transform: rotate(-45deg);
+  top: -4px;
+  opacity: 1;
+}
+.button:hover span::after {
+  transform: rotate(45deg);
+  bottom: -4px;
+  opacity: 1;
+}
+
+.main {
+  height: 100vh;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .header {
+    background-color: transparent;
+  }
+
+  .menu .nav {
+    display: flex;
+  }
+  .menu .nav__list {
+    flex-direction: column;
+  }
+  .menu .nav__item {
+    margin-right: 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+}

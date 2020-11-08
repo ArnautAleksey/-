@@ -1,0 +1,146 @@
+html, body {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+}
+svg path {
+  fill: #CEDDEC;
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #CEDDEC;
+}
+
+.title {
+  font-size: 60px;
+}
+
+.main {
+  padding-top: 50px;
+  min-height: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__item {
+  margin: 5px;
+  border: 2px solid #CEDDEC;
+  border-radius: 10px;
+  max-width: 300px;
+  min-height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card__item:hover {
+  box-shadow: 0 10px 5px #000000;
+}
+.card__item:hover .card__button {
+  visibility: visible;
+  opacity: 1;
+}
+.card__item:hover .card__more {
+  transform: translateY(0);
+}
+.card__item:active {
+  bottom: -2px;
+}
+
+.card__more {
+  position: absolute;
+  top: 0;
+  border: 2px solid #CEDDEC;
+  border-top: transparent;
+  padding: 5px 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+}
+
+.card__content {
+  text-align: center;
+}
+
+.card__content-title {
+  padding: 0 5px;
+}
+
+.footer {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social {
+  margin-bottom: 20px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__item {
+  margin-right: 20px;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__link svg {
+  width: 40px;
+  height: 40px;
+}
+.nav__link svg path {
+  transition: 0.5s;
+}
+.nav__link:hover svg path {
+  fill: #FFFFFF;
+}
