@@ -14,12 +14,12 @@ body {
 
 .card {
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   transform-style: preserve-3d;
   perspective: 1000px;
 }
 .card:last-child {
-  margin-right: 0;
+  margin-bottom: 20px;
 }
 
 .item {

@@ -1,0 +1,148 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 260px;
+  height: 260px;
+  background-color: #FFCC70;
+  background-image: linear-gradient(43deg, #FFCC70, #C850C0);
+  border-radius: 10px;
+  border: 2px solid #CEDDEC;
+  margin-bottom: 20px;
+  transition: 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover {
+  box-shadow: 0 0 10px #FFCC70;
+}
+.box:hover .copy {
+  visibility: visible;
+  opacity: 1;
+}
+
+.copy {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.copy svg {
+  width: 30px;
+  height: 30px;
+}
+.copy svg path {
+  transition: 0.5s;
+  fill: #CEDDEC;
+}
+.copy:hover svg path {
+  fill: #262833;
+}
+.copy:hover .text {
+  color: #262833;
+  visibility: visible;
+  opacity: 1;
+}
+
+.text {
+  font-size: 16px;
+  margin-left: 5px;
+  font-weight: 700;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.degree {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.degree_active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.wrapper {
+  max-width: 260px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.out {
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.out::after {
+  position: absolute;
+  content: "";
+  border: 2px solid #CEDDEC;
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  right: 0;
+}
+
+.colors {
+  display: flex;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.color:last-child {
+  margin-right: 0;
+}
+
+.val {
+  position: absolute;
+  width: 50px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.button-random {
+  padding: 5px 25px;
+  border: 2px solid #CEDDEC;
+  transition: 0.5s;
+}
+.button-random:hover {
+  background-color: #CEDDEC;
+  color: #262833;
+}

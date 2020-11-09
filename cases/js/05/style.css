@@ -5,9 +5,18 @@ body {
   min-height: 100vh;
 }
 
+.wrapper {
+  max-width: 550px;
+  width: 100%;
+  padding: 0 20px;
+}
+
 .buttons {
   border: 1px solid #CEDDEC;
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .button {
@@ -17,6 +26,7 @@ body {
   border-radius: 10px;
   text-transform: uppercase;
   transition: 0.5s;
+  margin-bottom: 10px;
 }
 .button:last-child {
   margin-right: 0;
@@ -47,4 +57,14 @@ body {
   opacity: 1;
   visibility: visible;
   position: relative;
+}
+
+@media (max-width: 375px) {
+
+  .buttons {
+    flex-direction: column;
+  }
+  .button {
+    margin-right: 0;
+  }
 }
