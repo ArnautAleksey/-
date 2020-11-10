@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 10px;
+}
+
+.title {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #CEDDEC;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.notes {
+    margin: 20px 0;
+    padding: 10px 10px;
+    max-height: 70vh;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+        background-color: #CEDDEC;
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #262833;
+        border-radius: 10px;
+    }
+}
+
+.note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: #262833;
+        bottom: -5px;
+        left: 0;
+    }
+}
+
+.button {
+    color: #262833;
+
+    svg {
+        width: 20px;
+        height: 20px;
+        transition: 0.5s;
+    }
+    &:hover {
+
+        svg {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.note-complited {
+    position: absolute;
+}
+
+.note-edit {
+    margin-right: 10px;
+}
+
+.note-text {
+    padding-left: 30px;
+    color: #262833;
+    width: 95%;
+}
+
+.note-text_complited {
+    text-decoration: line-through;
+}
+
+.add-note {
+    margin: 10px 0;
+    border: 4px solid #262833;
+    padding: 5px 0;
+    transition: 0.5s;
+
+    &:hover {
+        color: #CEDDEC;
+        background-color: #262833;
+    }
+}
+
+.add-text {
+    color: #262833;
+    border: 4px solid transparent;
+    border-bottom: 4px solid #262833;
+    margin: 10px 0 0;
+    transition: 0.5s;
+    padding: 5px 10px;
+
+    &:hover {
+        border: 4px solid #262833;
+    }
+    &:active, &:focus {
+        border: 4px solid #262833;
+    }
+}
+
+.thems {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.them {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.them_active {
+    opacity: 1;
+    visibility: visible;
+}
+
