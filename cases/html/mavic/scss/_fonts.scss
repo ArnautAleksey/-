@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/ubuntu-v15-latin_cyrillic-300.eot');
+    src: local('Ubuntu Light'), local('Ubuntu-Light'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-300.woff2') format('woff2'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-300.woff') format('woff'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-300.ttf') format('truetype'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-300.svg#Ubuntu') format('svg');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ubuntu-v15-latin_cyrillic-regular.eot');
+    src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-regular.woff2') format('woff2'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-regular.woff') format('woff'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-regular.ttf') format('truetype'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-regular.svg#Ubuntu') format('svg');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/ubuntu-v15-latin_cyrillic-500.eot');
+    src: local('Ubuntu Medium'), local('Ubuntu-Medium'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-500.woff2') format('woff2'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-500.woff') format('woff'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-500.ttf') format('truetype'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-500.svg#Ubuntu') format('svg');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/ubuntu-v15-latin_cyrillic-700.eot');
+    src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-700.woff2') format('woff2'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-700.woff') format('woff'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-700.ttf') format('truetype'),
+        url('../fonts/ubuntu-v15-latin_cyrillic-700.svg#Ubuntu') format('svg');
+}
