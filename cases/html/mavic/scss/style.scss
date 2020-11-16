@@ -5,11 +5,30 @@
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
+    position: relative;
+}
+
+.section {
+    min-height: 100vh;
+    background: url(../images/section-bg.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.section__wrap {
+    padding: 150px 0 0 30px;
+}
+
+.section__title {
+    font-size: 44px;
+    line-height: 50px;
+    color: #FFFFFF;
 }
 
 .header {
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .header__wrap {
@@ -77,8 +96,8 @@
 }
 
 .main {
-    height: 100vh;
     width: 100%;
+    min-height: 100vh;
     background: url(../images/bg-1.jpg) no-repeat center center;
     background-size: cover;
 }
@@ -135,4 +154,116 @@
 .scroll__btn {
     position: absolute;
     bottom: 40px;
+}
+
+.about__wrap {
+    min-height: 100vh;
+}
+
+.about__title {
+    margin-bottom: 75px;
+}
+
+.about__subtitle {
+    max-width: 440px;
+    margin-left: 30px;
+    padding-bottom: 30px;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 300;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.slider {
+    position: absolute;
+    right: -100px;
+    bottom: 100px;
+    max-width: 830px;
+    width: 100%;
+    height: 350px;
+}
+
+.slider__container {
+    width: 830px;
+    overflow: hidden;
+}
+
+.slider__track {
+    display: flex;
+    transition: 0.5s;
+}
+
+.slider__item {
+    min-width: 830px;
+    height: 350px;
+    position: relative;
+    bottom: -15px;
+    right: 15px;
+}
+
+.slider__item-content {
+    position: absolute;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 300px;
+    text-align: right;
+    z-index: 2;
+    bottom: 80px;
+}
+
+.slider__item-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: '';
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border: 4px solid #FFFFFF;
+        transform: translate(15px, -15px);
+        z-index: -1;
+    }
+}
+
+.sldier__buttons {
+    position: absolute;
+    bottom: -15px;
+    right: 15px;
+    display: flex;
+}
+
+.slider__button {
+    width: 60px;
+    height: 50px;
+    background: #1C1C1C;
+    color: #FFFFFF;
+    transition: 0.5s;
+
+    svg {
+        width: 8px;
+        height: 15px;
+
+        path {
+            transition: 0.5s;
+        }
+    }
+
+    &:hover {
+        background: #FFFFFF;
+
+        svg {
+
+            path {
+                fill: #000000;
+            }
+        }
+    }
 }
