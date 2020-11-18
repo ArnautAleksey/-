@@ -1,0 +1,467 @@
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.eot");
+  src: local(""), url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.svg#RobotoCondensed") format("svg");
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-condensed-v19-latin_cyrillic-700.eot");
+  src: local(""), url("../fonts/roboto-condensed-v19-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-condensed-v19-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-condensed-v19-latin_cyrillic-700.woff") format("woff"), url("../fonts/roboto-condensed-v19-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-condensed-v19-latin_cyrillic-700.svg#RobotoCondensed") format("svg");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto-v20-latin_cyrillic-300.eot");
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-300.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-300.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-300.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-300.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-300.svg#Roboto") format("svg");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v20-latin_cyrillic-regular.eot");
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto") format("svg");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v20-latin_cyrillic-500.eot");
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-500.svg#Roboto") format("svg");
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+:focus {
+  outline: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Roboto";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+figure {
+  margin: 0;
+}
+
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 100px;
+  background-color: #2B4074;
+  display: flex;
+  align-items: center;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.menu {
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.menu span {
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background-color: #2B4074;
+  border-radius: 10px;
+}
+.menu span::before, .menu span::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: #2B4074;
+  border-radius: 10px;
+}
+.menu span::before {
+  top: 5px;
+}
+.menu span::after {
+  bottom: 5px;
+}
+.menu:hover {
+  background: #e6e6e6;
+}
+
+.nav {
+  display: none;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__container {
+  overflow: hidden;
+}
+
+.slider__track {
+  display: flex;
+  min-width: 100%;
+}
+
+.slider__item {
+  height: 100vh;
+  min-width: 100%;
+  background: url(../images/bg.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+.slider__item-content {
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: "Roboto Condensed";
+  font-size: 96px;
+  line-height: 96px;
+  letter-spacing: 2px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Roboto Condensed";
+  max-width: 890px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 20px 0 50px;
+}
+
+.main__button {
+  font-size: 18px;
+  color: #F9F6E5;
+  padding: 18px 45px;
+  background: #2B4074;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.main__button:hover {
+  background: #1d2b4f;
+}
+
+.slider__dots {
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  left: 50%;
+  margin-left: -25px;
+}
+.slider__dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin-right: 10px;
+  border-radius: 100%;
+  border: 1px solid #FFFFFF;
+}
+.slider__dots span:last-child {
+  margin-right: 0;
+}
+.slider__dots span.active {
+  background: transparent;
+}
+
+.slider__buttons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  margin-top: -70px;
+  right: 0;
+}
+
+.slider__button {
+  color: #FFFFFF;
+  width: 70px;
+  height: 70px;
+  background-color: #2B4074;
+  transition: 0.5s;
+}
+.slider__button svg {
+  width: 30px;
+  height: 30px;
+}
+.slider__button svg path {
+  transition: 0.5s;
+}
+.slider__button:hover {
+  background-color: #F9F6E5;
+}
+.slider__button:hover path {
+  fill: #cacaca;
+}
