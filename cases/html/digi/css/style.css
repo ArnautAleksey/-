@@ -295,12 +295,17 @@ input {
   font-family: "Roboto Condensed";
   font-size: 48px;
   line-height: 56px;
+  position: relative;
 }
 .section__title::before {
   position: absolute;
   content: "";
   width: 100px;
   height: 8px;
+  background-color: #FFFFFF;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -50px;
 }
 
 .header {
@@ -436,7 +441,7 @@ input {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: #fff;
+  background-color: #FFFFFF;
   margin-right: 10px;
   border-radius: 100%;
   border: 1px solid #FFFFFF;
@@ -633,4 +638,69 @@ input {
 }
 .services__card:hover .services__card-link {
   bottom: 0;
+}
+
+.projects {
+  height: 100vh;
+  background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
+}
+
+.projects__wrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projects__title {
+  color: #FFFFFF;
+}
+
+.projects__cards {
+  display: flex;
+}
+
+.projects__card {
+  margin-right: 22px;
+}
+.projects__card:last-child {
+  margin-right: 0;
+}
+.projects__card-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects__card-img:hover .projects__card-content {
+  opacity: 1;
+}
+.projects__card-content {
+  width: 240px;
+  height: 215px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(249, 246, 229, 0.8);
+  mix-blend-mode: normal;
+  opacity: 0;
+  transition: 0.5s;
+}
+.projects__card-content-info {
+  margin-right: 12px;
+  cursor: pointer;
+}
+.projects__card-content-search {
+  cursor: pointer;
+}
+.projects__card-title {
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  color: #2B4074;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
 }

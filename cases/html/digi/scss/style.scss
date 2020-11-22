@@ -11,12 +11,17 @@
     font-family: 'Roboto Condensed';
     font-size: 48px;
     line-height: 56px;
+    position: relative;
 
     &::before {
         position: absolute;
         content: '';
         width: 100px;
         height: 8px;
+        background-color: #FFFFFF;
+        bottom: -25px;
+        left: 50%;
+        margin-left: -50px;
     }
 }
 
@@ -161,7 +166,7 @@
         display: inline-block;
         width: 10px;
         height: 10px;
-        background-color: #fff;
+        background-color: #FFFFFF;
         margin-right: 10px;
         border-radius: 100%;
         border: 1px solid #FFFFFF;
@@ -324,6 +329,7 @@
         &:nth-child(4) {
             margin-right: 0;
         }
+
         &:last-child {
             margin-right: 0;
         }
@@ -382,9 +388,11 @@
             .services__card-img {
                 bottom: 0;
             }
+
             .services__card-title {
                 bottom: 0;
             }
+
             .services__card-subtitle {
                 bottom: 0;
             }
@@ -393,5 +401,79 @@
                 bottom: 0;
             }
         }
+    }
+}
+
+.projects {
+    height: 100vh;
+    background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
+}
+
+.projects__wrap {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects__title {
+    color: #FFFFFF;
+}
+
+.projects__cards {
+    display: flex;
+}
+
+.projects__card {
+    margin-right: 22px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &-img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+
+            .projects__card-content {
+                opacity: 1;
+            }
+        }
+    }
+
+    &-content {
+        width: 240px;
+        height: 215px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(249, 246, 229, 0.8);
+        mix-blend-mode: normal;
+        opacity: 0;
+        transition: 0.5s;
+
+        &-info {
+            margin-right: 12px;
+            cursor: pointer;
+        }
+        &-search {
+            cursor: pointer;
+        }
+    }
+
+    &-title {
+        text-align: center;
+        margin-top: 30px;
+        letter-spacing: 2px;
+        color: #2B4074;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
     }
 }
