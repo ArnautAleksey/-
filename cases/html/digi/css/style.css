@@ -296,6 +296,7 @@ input {
   font-size: 48px;
   line-height: 56px;
   position: relative;
+  display: inline-block;
 }
 .section__title::before {
   position: absolute;
@@ -641,12 +642,11 @@ input {
 }
 
 .projects {
-  height: 100vh;
   background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
 }
 
 .projects__wrap {
-  height: 100vh;
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -655,6 +655,7 @@ input {
 
 .projects__title {
   color: #FFFFFF;
+  margin-bottom: 110px;
 }
 
 .projects__cards {
@@ -703,4 +704,49 @@ input {
   font-size: 16px;
   line-height: 19px;
   font-weight: 700;
+}
+
+.team {
+  margin-top: 50px;
+}
+
+.team__wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.team__img {
+  margin-right: 90px;
+}
+
+.team__content {
+  max-width: 585px;
+}
+
+.team__content-title {
+  margin-bottom: 80px;
+}
+.team__content-title::before {
+  background-color: #2B4074;
+}
+
+.team__content-text {
+  color: #9B9B9B;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
+
+.team__content-button {
+  color: #F9F6E5;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 20px 35px;
+  background: #2B4074;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+.team__content-button:hover {
+  background: #1d2b4f;
 }
