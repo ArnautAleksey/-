@@ -8,8 +8,8 @@ function changeColor() {
     colors.forEach(color => {
         const hex = color.querySelector('.hex');
 
-        color.style.backgroundColor = randomColor();
         hex.innerHTML = randomColor();
+        color.style.backgroundColor = hex.textContent
 
         color.addEventListener('click', () => {
 

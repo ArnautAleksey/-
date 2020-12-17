@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.start {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.level {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+}
+.level:last-child {
+  margin-right: 0;
+}
+.level path {
+  transition: 0.5s;
+}
+.level:hover:first-child path {
+  fill: #418353;
+}
+.level:hover:nth-child(2) path {
+  fill: #ebc607;
+}
+.level:hover:last-child path {
+  fill: #f85d69;
+}
+
+.game {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.item {
+  flex: 24%;
+  margin: 1px;
+  border: 1px solid #CEDDEC;
+  transition: 0.2s;
+}
+
+.active {
+  background: #CEDDEC;
+  cursor: pointer;
+}
+
+.end {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+}
+.end p {
+  margin-bottom: 20px;
+}
+
+.restart {
+  margin-top: 20px;
+  padding: 5px 30px;
+  border: 2px solid #CEDDEC;
+  position: relative;
+}
+.restart:active {
+  bottom: -1px;
+}
+
+.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
