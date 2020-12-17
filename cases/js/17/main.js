@@ -15,6 +15,7 @@ function handleSubmit(e) {
   if (input.value == randomNumber) {
     printMessage("Верно, это число " + randomNumber);
     printMessage("Количество попыток: " + counter);
+    input.disabled = true;
   } else if (input.value > randomNumber) {
     printMessage("Много. Попробуй еще раз.");
     input.value = "";

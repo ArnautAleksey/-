@@ -82,3 +82,16 @@ body {
     opacity: 0;
   }
 }
+@media (max-width: 425px) {
+  .wrapper {
+    height: 250px;
+  }
+
+  .time {
+    font-size: 22px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+}

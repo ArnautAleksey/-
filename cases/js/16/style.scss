@@ -99,3 +99,20 @@ body {
     visibility: hidden;
     position: absolute;
 }
+
+@media (max-width: 320px) {
+    .item {
+        &:last-child {
+            display: none;
+        }
+        &:nth-child(15) {
+            display: none;
+        }
+        &:nth-child(14) {
+            display: none;
+        }
+        &:nth-child(13) {
+            display: none;
+        }
+    }
+}

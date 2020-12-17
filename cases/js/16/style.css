@@ -83,3 +83,18 @@ body {
   visibility: hidden;
   position: absolute;
 }
+
+@media (max-width: 320px) {
+  .item:last-child {
+    display: none;
+  }
+  .item:nth-child(15) {
+    display: none;
+  }
+  .item:nth-child(14) {
+    display: none;
+  }
+  .item:nth-child(13) {
+    display: none;
+  }
+}

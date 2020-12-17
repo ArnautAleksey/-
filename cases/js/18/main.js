@@ -40,7 +40,7 @@ firstItem.onclick = () => {
     overflow.classList.remove("active");
     firstItem.classList.remove("succes");
     firstItem.classList.remove("danger");
-  }, 100);
+  }, 500);
 
   score.textContent = counter;
 };
@@ -64,7 +64,7 @@ secondItem.onclick = () => {
     overflow.classList.remove("active");
     secondItem.classList.remove("succes");
     firstItem.classList.remove("danger");
-  }, 100);
+  }, 500);
 
   score.textContent = counter;
 };
